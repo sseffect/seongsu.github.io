@@ -1,0 +1,7 @@
+<h1>성수의<%= @friend.id %> 번째 친구 <%= @friend.name %></h1>
+<h1>성별 : <%= @friend.gender %></h1>
+<h1>나이 : <%= @friend.age %></h1>
+<h1>취미 : <%= @friend.hobby %></h1>
+<a href='/friends'>목록</a>
+<a href='/friends/<%= @friend.id %>/edit'>수정</a>
+<a href='/friends/<%= @friend.id %>' data-confirm='삭제하시겠습니까?' data-method='delete'>삭제</a>

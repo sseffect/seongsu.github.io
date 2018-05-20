@@ -1,0 +1,10 @@
+<h1>성수가 새로 사귄 친구</h1>
+<form action='/friends/create' method='POST'>
+    <input name= 'authenticity_token' type= 'hidden' value=<%= @token %>></input>
+    <input name= 'input_name' type= 'text'></input>
+    <input name= 'input_gender' type= 'text'></input>
+    <input name= 'input_age' type= 'text'></input>
+    <input name= 'input_hobby' type= 'text'></input>
+    <input type= 'submit'></input>
+    <br><a href='/friends'>목록</a>
+</form>

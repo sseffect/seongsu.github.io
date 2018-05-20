@@ -1,0 +1,7 @@
+<h1>성수 친구들 목록</h1>
+<h2><a href='/friends/new'>새 친구를 사겨보자</a></h2>
+<ul>
+<% @friends.each do |friend| %>
+  <li><a href='/friends/<%= friend.id %>'><%= friend.name %></a></li>
+<% end %>
+</ul>
